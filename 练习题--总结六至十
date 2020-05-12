@@ -1,0 +1,282 @@
+总结六
+
+1.判断题：
+print('北京'>'南京') #打印出False
+ 
+2.判断题：
+print(bool('no'))#打印出False
+
+
+3.判断题：
+print(bool(not 'yes'))#打印出False
+
+4.单选题，运行代码后，以下选项正确的是（）
+while 'a' in ['apple','coco'] :
+    print('水果姐你好')
+A.报错
+B.无限循环打印'水果姐你好'
+C.没显示任何内容，因为while后面条件为假
+D.打印一次'水果姐你好'
+
+5.选择题：单选题，运行代码后，以下选项正确的是（）
+if 8 > 5 or not '点菜':
+    print('粤菜')
+else:
+    print('湘菜')
+A.报错
+B.打印出湘菜
+C.同时打印出粤菜和湘菜
+D.打印粤菜
+
+
+总结七
+
+1：代码的功能是：输出0～10之间的偶数（包括0，不包括10）。请问遗漏的代码是？
+x = 10
+while x:
+    x = x-1
+    if x % 2 != 0:
+# 遗漏的一行代码
+    print(x)
+A. break
+B. continue
+C. pass
+D. else:
+
+2学员小十想要写一段代码来打印100以内的所有奇数，请你补全遗漏的代码。
+num = 0
+while num < 100:
+    num += 1
+    if num % 2 == 0: 
+        # 遗漏的代码
+    print(num)
+A. break
+B. pass
+C. else：
+D. continue
+
+3下代码中有一处bug，请你找到它并选择对应的报错类型。
+
+while True:    
+    print('今天要上班吗？')
+    t = input('今天是不是周末？')
+    if t == '是'
+        break
+        
+print('耶！终于休假啦！')
+
+A. SyntaxError: invalid syntax
+B. IndentationError: expected an indented block
+C. SyntaxError: 'break' outside loop
+D. NameError: name '是' is not defined
+
+
+4小斌在学习python的时候，发现代码里的pass自己不是很理解 ，请帮他选出下列正确的理解：
+A. python 会忽略 pass 语句，就像忽略注释一样。
+B. pass 语句会终止当前循环。
+C. pass 不做任何事情，一般用做占位语句。
+D. 其他说法都是正确的。
+
+5关于循环中的break和continue语句，下列叙述正确的是：
+A. continue语句的作用是结束整个循环的执行
+B. 只能在循环体内使用break语句
+C. 在循环体内使用break或continue语句的作用相同
+D.continue语句只能用于while循环
+
+
+
+总结八
+
+1.判断题：运行print('胡歌给我的红包是%f 元' % 666)在终端中显示的结果是：
+胡歌给我的红包是666元
+
+
+2.判断题：运行以下代码，会在终端中显示“王一博“。
+
+if '肖战':
+    print('王一博')
+
+3.判断题：列表list1 = [1, 2, 3]可以通过list1.append(4, 5)的方法令list1 = [1, 2, 3, 4, 5]
+
+4.选择题：
+
+西西学了用%拼接数据这个知识点后，觉得%很好用。但她写的练习代码报错了，请大家帮她找找有几处错误。
+
+year = 2019
+show = ['中餐厅', '庆余年', '拜托了冰箱', '演员请就位', '奇葩说']
+print('我喜欢看的综艺是%s年的创造营101，还有s%，最近我又迷上了一部电视剧%s。' % (a, show[5], show[1]))
+
+A. 2
+B. 3
+C. 4
+D. 6
+
+5.下列关于python语言的说法，正确的是：
+
+A选项，a = print('请给变量a赋值')，会接收输入的值并把值赋值给a
+B选项，else语句只能和if语句搭配使用
+C选项，a = int('3.14')，可通过int()函数将字符串'3.14'转化为int类型
+D选项，append()函数可以给列表增加元素，但每次只能增加一个元素
+
+
+总结九
+
+1单选题：
+
+def c(a):
+    print('%s让我无法自拔' % a)
+    return a
+    print('程序结束')
+c('python')
+上述代码在终端输出的结果是：（）
+A. 程序报错
+B. python让我无法自拔
+C. 让我无法自拔
+D. 程序结束
+
+
+
+2：单选题
+下列关于定义函数的语句错误的是：
+A. def menu(eat, dessert='绿豆沙', *barbeque):
+B. def menu(eat, barbeque, dessert='绿豆沙'):
+C. def menu(eat, *barbeque, dessert='绿豆沙'):
+D. def menu(eat, dessert='绿豆沙', barbeque):
+
+
+
+3多选题：
+
+
+小韩在定义函数的时候，记混了一些函数的相关知识和规则，请帮他选出正确的选项：
+A.def 函数()括号内是设置该函数的参数，也可以设置为无参数。
+B.参数可以在括号中设置默认值，例如“def hanshu(canshu='123'):”，那么这种情况下调用该函数的时候可以不给参数canshu传参。
+C.函数必须设置return 值，不然会报错。
+D.函数内容以冒号起始，并且缩进。
+
+
+4单选题：
+在以下代码中，执行结果正确的是（）
+x = 1
+y = 2
+def add(x, y):
+    z = x + y
+    print(z)
+print(add(x, y))
+
+A:
+3
+None
+
+B:
+3
+
+C:
+None
+
+D:
+报错
+
+
+5单选
+运行以下代码后正确的是
+def fun(var):
+    var = 1314    
+    print(var, end='')
+var = 520
+fun(var)
+print(var)   
+
+A.520
+
+B.1314
+
+C.5201314
+
+D.1314520
+
+总结十
+
+1.判断题以下代码能打印出“李白”。
+def a():
+    name = ''李白
+a()
+print(name)
+
+
+
+
+2.在以下代码中，执行结果正确的是（）
+
+x = 1
+y = 2
+
+def add(x, y):
+    z = x + y
+    print(z)
+
+print(add(x, y))
+A:
+3
+
+B:
+3
+None
+
+C:
+None
+
+D:
+报错
+
+
+
+
+
+
+3.小严是公司的HR，年末了，他想根据员工入职的时间来发年终奖，两年以上的1000，其他的500，于是他写了下面这段代码：
+
+while True:
+    a = input('请输入员工入职的年限：')
+    if a > 2:
+        print('年终奖为1000')
+    else a < 2:
+    print('年终奖为500')
+
+请帮他找出代码错的地方（）
+PS:共有4处
+
+
+
+
+
+
+4.实操题，设置一个计算年终奖的函数，要求如下：
+
+工作时长不满六个月，发放固定奖金500元。
+工作时长在六个月和一年之间(含一年)，发放奖金120元*月数（如8个月为960元）
+工作时长在一年以上，发放奖金180元*月数 （如20个月为3600元）
+
+定义两个函数，第一个函数功能为根据工作月数返回奖金额(if判断语句)
+第二个函数功能为打印出'该员工来了XX个月，获得奖金XXX元'。
+
+
+
+
+
+5.补充下列代码，实现计算餐饮店利润
+
+rent = 3000 #表示租金为3000
+
+def cost():#定义一个函数
+    sd = int(input('请输入本月的水电费用'))#用input用输入水电费
+    food = #用input用输入食材费用
+    sum1= #水电和食材费用相加
+    print #打印sum1的值
+    return #返回一个值
+    
+def sum_cost():#定义主函数
+    sum2 = rent + cost()#租金和cost()的结果相加
+    print('本月的总成本是' + str(sum2))
+
+sum_cost() #调用主函数
